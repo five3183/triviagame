@@ -36,8 +36,6 @@ font-family: Impact;
     color: red;
     background-color: black;
     padding: 10px;
-    margin-top: 50px;
-    margin-bottom: 10px;
     Font-family: 'Walter Turncoat', cursive;
 }
 
@@ -59,3 +57,34 @@ font-family: Impact;
     color: beige;
 }
 
+@media screen and (max-width: 640px) {
+   
+    h1 {
+        font-size: 40px;
+        padding: 10px;
+        margin: 0;
+        height: 100px;
+    }
+
+    .questionSection {
+        font-size: 15px;
+        padding: 0;
+        margin:10px;
+        line-height: 30px;
+        height: auto;
+    }
+    .answerSection {
+        font-size: 22px;
+        padding:20px;
+        border: 0;
+        text-align: center;
+        Font-family: 'Walter Turncoat', cursive;
+    }
+    #answer0, #answer1, #answer2, #answer3 {
+        margin: 5px;
+    }
+
+    .timeSection {
+        font-size: 25px;
+    }
+}
