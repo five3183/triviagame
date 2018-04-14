@@ -1,0 +1,61 @@
+body {
+    background-image: url("images/walkingdead.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+background-color: darkred;
+color: beige;
+text-align: center;
+height: 150px;
+padding: 50px;
+font-size: 60px;
+font-family: Impact;
+
+}
+
+.timeSection {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+    color: red;
+    background-color: black;
+    font-family: 'Waiting for the Sunrise', cursive;
+
+}
+.questionSection {
+    padding: 50px; 
+    height: 200px;
+    margin-top: 50px;
+    text-align: center;
+}
+#QUESTION {
+    font-size: 24px;
+    text-align: center;
+    color: red;
+    background-color: black;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    Font-family: 'Walter Turncoat', cursive;
+}
+
+.answerSection {
+    font-size: 22px;
+    background-color: black;
+    color: red;
+    padding: 30px; 
+    border: 10px;
+    text-align: center;
+    Font-family: 'Walter Turncoat', cursive;
+}
+
+#answer0, #answer1, #answer2, #answer3 {
+    margin: 10px; 
+    outline: none;
+    outline-color: none;
+    background-color: darkred;
+    color: beige;
+}
+

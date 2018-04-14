@@ -13,18 +13,28 @@
     <link rel="stylesheet" type="text/css" href="assets/style/style.css">
     <!-- Add JQ-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise|Walter+Turncoat" rel="stylesheet">
 </head>
 <body>
-    <div class="container" align="center">
+    <div class="container">
         <div class = "row justify-content-center">
-                <div class="jumbotron">
-                    <h1>Totally Trivial Trivia</h1>
+                <div>
+                    <h1>Walking Dead Trivia</h1>
                 </div>
-                <div class = "col-md-12">Time Remaining: <span id = "TIME">00:00</span>
+                <div class = "col-md-12 timeSection">Time Remaining: <span id = "TIME">10 Seconds</span>
                 </div>
-                <div class = "col-md-12"><span id = "QUESTION"></span>
+                <br>
+                <div class = "col-md-12 questionSection"><span id = "QUESTION"></span>
                 </div>
-                <div class = "col-md-12"><span id = "ANSWERS"></span>
+                <br>
+                <div class = "col-md-2"></div>
+                <div class = "col-md-8 answerSection">
+                    <div class = "col-md-6"><button type="button" class="btn btn-danger btn-lg" id = "answer0"></button></div>
+                    <div class = "col-md-6"><button type="button" class="btn btn-danger btn-lg" id = "answer1"></button></div>
+                    <div class = "col-md-6"><button type="button" class="btn btn-danger btn-lg" id = "answer2"></button></div>
+                    <div class = "col-md-6"><button type="button" class="btn btn-danger btn-lg" id = "answer3"></button></div>
+                <div class = "col-md-2"></div>
                 </div>
             </div>
         </div>
