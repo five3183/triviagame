@@ -57,6 +57,15 @@ font-family: Impact;
     color: beige;
 }
 
+#startButton {
+    text-align: center;
+    margin-top: 20px;
+
+}
+#start {
+    background-color: darkred;
+    color: beige;
+}
 @media screen and (max-width: 640px) {
    
     h1 {

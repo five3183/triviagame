@@ -15,10 +15,45 @@ questionArray = [
 var timeRemaining;
 var answersCorrect = 0;
 var answersIncorrect = 0;
+var gameStart = false
 
 // i is an index number bound to the question number
 i = 0;
 var time = 10;
+
+$("#start").on("click", function() {
+    gameStart = true
+    console.log(gameStart)
+   startGame()
+})
+
+function startGame () {
+    removeHide()
+    startTimer();
+    newQuestion();
+}
+
+function addHide() {
+    if(gameStart === false) {
+        $("#QUESTION").hide();
+        $("#answer0").hide();
+        $("#answer1").hide();
+        $("#answer2").hide();
+        $("#answer3").hide();
+        $(".answerSection").hide()
+        $("#TIME").text("Click START GAME to begin.  You will have 10 seconds to answer each question.  Good luck!")
+    }
+}
+
+function removeHide() {
+    $("#QUESTION").show();
+    $("#answer0").show();
+    $("#answer1").show();
+    $("#answer2").show();
+    $("#answer3").show();
+    $(".answerSection").show()
+
+}
 
 //Function to pull new questions from the array
 function newQuestion () {
@@ -84,7 +119,7 @@ function checkGuess() {
 //Function to start the timer
 function startTimer() {
     if (i < questionArray.length){
-        $("#TIME").text(time + " Seconds");
+        $("#TIME").text("Time Remaining: " + time + " Seconds");
         time--;
         setTimeout(startTimer, 1000);
         if (time < 0) {
@@ -99,11 +134,17 @@ function startTimer() {
 //end game function to prompt alert
 function endGame() {
     if ((answersCorrect + answersIncorrect) === questionArray.length) {
-        alert("Number of Answers Correct: " + answersCorrect)
+        // alert("Number of Answers Correct: " + answersCorrect)
+        $("#QUESTION").hide();
+        $("#answer0").hide();
+        $("#answer1").hide();
+        $("#answer2").hide();
+        $("#answer3").hide();
+        $(".answerSection").hide();
+        $("#TIME").text("Number of Answers Correct: " + answersCorrect)
     }
 }
 //Start Game
 $(document).ready(function() {
-    startTimer();
-    newQuestion ();
+    addHide()
 });

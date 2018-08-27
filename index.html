@@ -19,21 +19,24 @@
 <body>
     <div class="container">
         <div class = "row justify-content-center">
-                <div>
-                    <h1>Walking Dead Trivia</h1>
-                </div>
-                <div class = "col-md-12 timeSection">Time Remaining: <span id = "TIME">10 Seconds</span>
-                </div>
-                <div class = "col-md-12 questionSection"><p id = "QUESTION"></p>
-                </div>
-                <div class = "col-md-2"></div>
-                <div class = "col-md-8 answerSection">
-                    <div class = "col-md-6"><button type="button" class="btn btn-danger btn-lg" id = "answer0"></button></div>
-                    <div class = "col-md-6"><button type="button" class="btn btn-danger btn-lg" id = "answer1"></button></div>
-                    <div class = "col-md-6"><button type="button" class="btn btn-danger btn-lg" id = "answer2"></button></div>
-                    <div class = "col-md-6"><button type="button" class="btn btn-danger btn-lg" id = "answer3"></button></div>
-                <div class = "col-md-2"></div>
-                </div>
+            <div>
+                <h1>Walking Dead Trivia</h1>
+            </div>
+            <div class = "col-md-12 timeSection"><span id = "TIME">10 Seconds</span>
+            </div>
+            <div id="startButton">
+                <button onClick = "this.style.visibility='hidden'" type="button" class="btn" id = "start">START GAME</button>
+            </div>
+            <div class = "col-md-12 questionSection"><p id = "QUESTION"></p>
+            </div>
+            <div class = "col-md-2"></div>
+            <div class = "col-md-8 answerSection">
+                <div class = "col-md-6"><button type="button" class="btn btn-danger btn-lg" id = "answer0"></button></div>
+                <div class = "col-md-6"><button type="button" class="btn btn-danger btn-lg" id = "answer1"></button></div>
+                <div class = "col-md-6"><button type="button" class="btn btn-danger btn-lg" id = "answer2"></button></div>
+                <div class = "col-md-6"><button type="button" class="btn btn-danger btn-lg" id = "answer3"></button></div>
+            </div>
+            <div class = "col-md-2"></div>
             </div>
         </div>
     </div>
